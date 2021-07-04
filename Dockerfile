@@ -5,7 +5,7 @@ WORKDIR /app/ApiPrueba
 RUN dotnet restore
 
 # Step 2: PUBLISH
-COPY ApiPrueba/../ApiPrueba/
+COPY ApiPrueba/../
 RUN dotnet publish -o out /p:PublishWithAspNetCoreTargetManifest="false"
 
 # Step 3: RUN
